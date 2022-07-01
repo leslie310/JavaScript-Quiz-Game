@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 75%;
+
+}
+
+body {
+    background: white;
+    color: black;
+    margin: 0;
+    padding:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+
+}
+
+p {
+    font-size: 15px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 100px;
+}
+
+header h3 {
+    padding-left: 15px;
+    font-size: 25px;
+    display: inline;
+    text-align: center;
+}
+
+#view-high-scores:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.timer {
+    color: black;
+    font-size: 25px;
+    display: inline;
+    text-align: right;
+    padding-right: 15px;
+}
+
+section {
+    padding: 10px;
+    border: solid 2px black;
+    background-image:linear-gradient(rgba(15, 131, 240, 0.575), rgb(174, 179, 253));
+}
+
+.start h1, .start p {
+    text-align: center;
+}
+
+.question-title {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 25px 20px;
+    margin: auto;
+    color: black;
+}
+
+.end h1, .end p {
+    text-align: left;
+}
+
+.end input {
+    border-width: 1px;
+    padding: 5px;
+    outline: thin;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 45%;
+    
+}
+
+.end input:focus {
+    border: 2px solid black; 
+}
+.show {
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.question-section {
+    text-align: left;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#high-score {
+    text-align: left;
+}
+
+.buttons:hover {
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0 2px lightblue;
+    cursor: pointer;
+
+}
+
+.buttons {
+    background: black;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 3px lightblue;
+    margin-top: 10px;
+}
+
+.button {
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-gap: 5px;
+    margin: 20px 0;
+}
+
+.answer-button {
+    width: 50%;
+    text-align: left;
+    font-size: 25px;
+    color: black;
+}
+
+.startButton {
+    display: block;
+    margin-top: 10px; 
+}
+
+@media  screen and (max-width: 1024px) {
+    .buttons {
+        width: 100%;
+        font-size: 3.0vw;
+    }
+    #question {
+        font-size: 4.5vw;
+    }
+    h1 {
+        font-size: 4.5vw;
+    }
+    p {
+        font-size:  3.0vw;
+    }
+}

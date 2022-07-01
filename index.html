@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>  
+    <header>
+        <h3 id="high score">View High Scores</h3>
+        <h3 id="timer">Time: <span id="timer"></span></h3>
+    </header>
+
+    <section id="start-section" class="show">
+        <div class="section-start">
+            <h1>Baseball Quiz Game</h1>
+            <p>In the following you will be given multiple choice and will need to answer within the time limit. Right answers are worth 5 points and wrong answers will decrease your score by 2 points and your time by 2 seconds. GOODLUCK!
+            </p>
+            <button id="startButton">Start Quiz</button>
+        </div>
+    </div>
+    
+    <section id="question-section" class="hide">
+        <div class="question">
+            <div id="question-title"></div>
+            <div id="answer-button" class="button"></div>
+        </div>
+    </div>
+
+    <div id="end-container" class="hide">
+        <div class="container end">
+            <div id="score-banner">
+                <h2>Done!</h2>
+            </div>
+            <form id="initial-form" class="initials">
+                <p>Enter Your Initials:
+                    <input type="text" name="initials" id="initials" class="text-input"/>
+                    <button class="sumbit-button" id= "sumbit-score" type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+        <section id="highscore-section">
+            <h1 class="high-scores">High Score</h1>
+            <ol id="top-score-list" class="score-list"></ol>
+        <div>
+            <button class="buttons" id="go-back">Go back</button>
+            <button class="buttons" id="clear-high-scores">Clear high scores</button>
+        </div>
+        </div>
+    </div>
+            
+    <div class="hide" id="correct">
+        <h3>Correct!</h3>
+    </div>
+    <div class="hide" id="incorrect">
+        <h3>oops Incorrect ! </h3>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
